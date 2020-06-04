@@ -1,0 +1,398 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 1000vh;
+  font-family: 'Noto Serif TC', serif;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: transparent;
+}
+
+::selection {
+  background-color: transparent;
+  color: transparent;
+}
+
+.index-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("marc-lamy-YNYCJePQUC8-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.index-header .intor {
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  bottom: 0;
+  margin: auto;
+  border: solid white 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: rgba(224, 224, 224, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: white;
+}
+
+.index-header .intor h1 {
+  font-size: 10vmin;
+  margin: 40px 0px 10px 0;
+  font-weight: 900;
+}
+
+.index-header .intor p {
+  font-size: 3vmin;
+}
+
+.index-header .intor::after {
+  position: absolute;
+  width: 10vw;
+  height: 2vw;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: white;
+  color: black;
+  content: ': 為你提供最好的 :';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4px !important;
+  padding: 2px 20px;
+  top: -8%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.index-intor {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+.index-intor .text {
+  background-color: #131313;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 80px;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index-intor .text h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.index-intor .text p {
+  font-size: 30px;
+}
+
+.index-intor .img {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-image: url("brooke-cagle-9fHMo1-5Io8-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.index-feather {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #131313;
+  color: white;
+}
+
+.index-feather .h1 {
+  position: absolute;
+  background-color: white;
+  z-index: 500;
+  color: black;
+  font-size: 8vh;
+  font-weight: 700;
+  padding: 20px 50px;
+  bottom: 10%;
+}
+
+.index-feather .h1 p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.index-feather .cards {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-feather .cards .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-width: 20%;
+  background-color: yellow;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  cursor: pointer;
+}
+
+.index-feather .cards .card:hover {
+  width: 300%;
+  background-color: royalblue;
+}
+
+.index-feather .cards .card .intor {
+  background-color: rgba(17, 17, 17, 0.7);
+  opacity: .0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: white;
+  padding: 80px 10%;
+  -webkit-transition: .8s !important;
+  transition: .8s !important;
+}
+
+.index-feather .cards .card .intor h2 {
+  margin-top: 10vh !important;
+  margin-left: -40vw;
+  margin-bottom: 0;
+  font-size: 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.index-feather .cards .card .intor p {
+  width: 30vw;
+  margin-top: 20px !important;
+  margin-left: -50vw;
+  font-size: 22px;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.index-feather .cards .card:nth-child(1) {
+  background-image: url("donovan-valdivia-aKrZC9Fp9ek-unsplash.jpg");
+}
+
+.index-feather .cards .card:nth-child(2) {
+  background-image: url("lucinda-hershberger-4hQaZN5a1Xc-unsplash.jpg");
+}
+
+.index-feather .cards .card:nth-child(3) {
+  background-image: url("nikolas-noonan-CRT0Bjd5Syk-unsplash.jpg");
+}
+
+.index-feather .cards .card:hover .intor {
+  opacity: 1;
+}
+
+.index-feather .cards .card:hover .intor h2 {
+  margin-top: 10vh !important;
+  margin: 0;
+}
+
+.index-feather .cards .card:hover .intor p {
+  margin-top: 20px;
+  margin: 0;
+}
+
+.index-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #202020;
+  padding: 40px 0;
+}
+
+.index-item .title {
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.index-item .title h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.index-item .title p {
+  font-size: 22px;
+}
+
+.index-item .frame {
+  width: 90%;
+  height: 100%;
+  min-height: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.index-item .frame .item {
+  border-radius: 5px;
+  position: relative;
+  background-color: red;
+  height: 400px;
+  width: 28%;
+  margin: 1% 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.index-item .frame .item .t {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: -100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.index-item .frame .item .t p {
+  padding: 5%;
+  position: absolute;
+  bottom: -50%;
+  font-size: 18px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.index-item .frame .item .t::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.index-item .frame .item h2 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 500;
+  text-shadow: black 0px 0px 20px;
+}
+
+.index-item .frame .item::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  background-size: cover;
+  background-position: center;
+}
+
+.index-item .frame .item:nth-child(1)::before {
+  background-image: url("priscilla-du-preez-jxc2V0ayIfk-unsplash.jpg");
+}
+
+.index-item .frame .item:nth-child(2)::before {
+  background-image: url("dovile-ramoskaite-xX9SmqQCbFY-unsplash.jpg");
+}
+
+.index-item .frame .item:nth-child(3)::before {
+  background-image: url("henry-be-_y5CCcYWTjU-unsplash.jpg");
+}
+
+.index-item .frame .item:nth-child(4)::before {
+  background-image: url("lucian-alexe-yh0UtueiZ-I-unsplash.jpg");
+}
+
+.index-item .frame .item:hover h2 {
+  color: black;
+  bottom: 27%;
+  text-shadow: transparent 0px 0px 0px;
+}
+
+.index-item .frame .item:hover .t {
+  bottom: 0;
+}
+
+.index-item .frame .item:hover .t p {
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
